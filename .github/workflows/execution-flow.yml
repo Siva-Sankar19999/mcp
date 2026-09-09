@@ -91,6 +91,7 @@ jobs:
   
   report:
     name: Report Job
+    needs: [lint, deploy]
     if: failure()
     runs-on: ubuntu-latest
     steps: 
