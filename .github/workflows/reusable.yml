@@ -1,5 +1,5 @@
 name: Reusable workflow
-on: push
+on: workflow_call
 jobs: 
   deploy:
     name: Deploy Job(from Reusable workflow)
