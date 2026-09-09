@@ -1,0 +1,9 @@
+name: Reusable workflow
+on: push
+jobs: 
+  deploy:
+    name: Deploy Job(from Reusable workflow)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Information
+        run: echo "Deploying and uploading from reusable workflow"
